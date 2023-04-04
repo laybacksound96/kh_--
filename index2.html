@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li {
+        list-style-type: none;
+        background-color: wheat;
+        padding: 10px;
+      }
+      li:hover {
+        background-color: rgb(185, 176, 159);
+      }
+      ul {
+        padding: 0px;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      header {
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+      }
+      header > img {
+        margin-right: 100px;
+      }
+      article {
+        width: 30vw;
+      }
+      #contents {
+        margin-top: 50px;
+        display: flex;
+      }
+      #login__form {
+        margin-left: 30px;
+        height: 30vw;
+      }
+
+      .nav {
+        display: flex;
+        position: absolute;
+        margin-top: 50px;
+        height: 200px;
+      }
+      .container__subject:hover {
+        height: 200px;
+      }
+      .container__List {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 0px;
+        z-index: 1;
+      }
+      .container__subject {
+        position: relative;
+        padding: 10px 10px;
+        color: rgb(255, 129, 129);
+        margin: 0px 30px;
+        width: auto;
+      }
+      .class__hidden {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://www.iei.or.kr/resources/images/main/main_renewal/top_logo_s.jpg"
+      />
+      <form>
+        <input type="text" />
+        <button type="submit">검색</button>
+      </form>
+      <div class="nav">
+        <div class="container__subject">
+          java
+          <ul class="container__List class__hidden">
+            <li><a href="">java 기초</a></li>
+            <li><a href="">객체</a></li>
+            <li><a href="">Collection</a></li>
+            <li><a href="">Generics</a></li>
+          </ul>
+        </div>
+        <div class="container__subject">
+          SQL
+          <ul class="container__List class__hidden">
+            <li><a href="">DDL</a></li>
+            <li><a href="">DML</a></li>
+            <li><a href="">DCL</a></li>
+          </ul>
+        </div>
+        <div class="container__subject">
+          Front-End
+          <ul class="container__List class__hidden">
+            <li><a href="">HTML5</a></li>
+            <li><a href="">CSS3</a></li>
+            <li><a href="">JavaScript</a></li>
+            <li><a href="">jQuery</a></li>
+          </ul>
+        </div>
+        <div class="container__subject">
+          Server
+          <ul class="container__List class__hidden">
+            <li><a href="">JDBC</a></li>
+            <li><a href="">Servlet</a></li>
+            <li><a href="">JSP</a></li>
+            <li><a href="">Ajax</a></li>
+          </ul>
+        </div>
+        <div class="container__subject">
+          Framework
+          <ul class="container__List class__hidden">
+            <li><a href="">SPRING</a></li>
+            <li><a href="">myBatis</a></li>
+            <li><a href="">React</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div id="contents">
+      <article>
+        <h1>What is Lorem Ipsum?</h1>
+        <p>
+          What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in
+          the 1960s with the release of Letraset sheets containing Lorem Ipsum
+          passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum
+        </p>
+      </article>
+
+      <div id="login__form">
+        <form style="display: flex; margin-top: 50px">
+          <div style="display: flex; flex-direction: column">
+            <input type="text" placeholder="아이디 입력" />
+            <input type="text" placeholder="비밀번호 입력" />
+          </div>
+          <button type="submit">로그인</button>
+        </form>
+        <div style="display: flex; justify-content: space-evenly">
+          <span><a href="">회원 가입</a></span
+          ><span><a href="">ID/PW 찾기</a></span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        KH정보교육원&nbsp;｜&nbsp;사업자등록번호 :
+        851-87-00622&nbsp;｜&nbsp;서울 강남 제2014-01호&nbsp;｜&nbsp;대표자 :
+        양진선&nbsp;｜&nbsp;책임자 : 최홍석&nbsp;｜&nbsp; 개인정보관리책임자 :
+        양진선
+      </p>
+      <p>
+        강남지원 1관 : 서울특별시 강남구 테헤란로14길 6 남도빌딩 2F, 3F, 4F,<br />
+        5F, 6F 강남지원 2관 : 서울특별시 강남구 테헤란로10길 9 그랑프리 빌딩<br />
+        4F, 5F, 7F 강남지원 3관 : 서울특별시 강남구 테헤란로 130 호산빌딩 5F,<br />
+        6F 종로지원 : 서울특별시 중구 남대문로 120 그레이츠 청계(구 대일빌딩)<br />
+        2F, 3F 당산지원 : 서울특별시 영등포구 선유동2로 57 이레빌딩(구관)
+        19F,20F<br />
+        Copyright &copy; 1998-2023 KH Information Educational Institute All
+        Right Reserved
+      </p>
+    </footer>
+    <script>
+      const containers = document.querySelectorAll(".container__subject");
+      containers.forEach((node) => {
+        node.addEventListener("mouseenter", (event) => {
+          const navContents = event.target.childNodes[1];
+          navContents.classList.toggle("class__hidden");
+        });
+        node.addEventListener("mouseleave", (event) => {
+          const navContents = event.target.childNodes[1];
+          navContents.classList.toggle("class__hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
